@@ -1,6 +1,6 @@
 # hackupc
 
-## Create the dataset
+## Prepare the dataset
 
 ### If you have docker
 Pull the image
@@ -26,3 +26,12 @@ Download and install PostgreSql (If you don't have it)
 Download the [init.sql](https://github.com/Mundimoto/hackupc/blob/main/init.sql) file
 
 Execute the init.sql file
+
+## Connect to the dataset
+```
+Host: localhost ( if you installed the database into another host, only you know the url :) )
+Port: 5432 ( if you installed the database into another port, only you know the port :p )
+Database: mundimoto
+User: hackupc
+Password: not_secure_pass
+```
