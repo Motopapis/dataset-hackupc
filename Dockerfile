@@ -1,0 +1,12 @@
+FROM posgresql:latest
+
+# DEPLOY SQL PARAMETERS
+COPY init.sql /docker-entrypoint-initdb.d/
+
+# ENVIRONMENTAL VARIABLES AND SETTINGS
+ENV POSTGRES_PASSWORD=not_secure_pass
+ENV POSTGRES_USER=hackupc
+ENV POSTGRES_DB=mundimoto
+
+# PORT
+EXPOSE 5432
