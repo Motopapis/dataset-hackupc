@@ -1,4 +1,4 @@
-FROM posgresql:latest
+FROM postgresql:latest
 
 # DEPLOY SQL PARAMETERS
 COPY init.sql /docker-entrypoint-initdb.d/
